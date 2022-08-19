@@ -1,24 +1,225 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="RPSgame" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VHO-5k-FwN" userLabel="MAIN">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g8U-SM-6ss" userLabel="Row1">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="229"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rock, Paper, Scissors Elements version" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gPC-JS-Rgd">
+                                                <rect key="frame" x="96" y="88.5" width="222" height="52"/>
+                                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="21"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                                <color key="shadowColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.90980392160000001" green="0.8862745098" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="gPC-JS-Rgd" firstAttribute="centerX" secondItem="g8U-SM-6ss" secondAttribute="centerX" id="NBr-bv-QLs"/>
+                                            <constraint firstItem="gPC-JS-Rgd" firstAttribute="centerY" secondItem="g8U-SM-6ss" secondAttribute="centerY" id="P7S-8z-S2K"/>
+                                            <constraint firstItem="gPC-JS-Rgd" firstAttribute="height" secondItem="g8U-SM-6ss" secondAttribute="height" multiplier="0.227074" id="aFB-fJ-IS1"/>
+                                            <constraint firstItem="gPC-JS-Rgd" firstAttribute="width" secondItem="g8U-SM-6ss" secondAttribute="width" multiplier="0.536232" id="sDA-6t-laD"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fFX-Ah-Rps" userLabel="Row2">
+                                        <rect key="frame" x="0.0" y="229" width="414" height="409"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gYy-LD-Jc5">
+                                                <rect key="frame" x="40" y="47" width="127" height="111"/>
+                                                <state key="normal" backgroundImage="Element_Cryo">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vds-wn-tMl">
+                                                <rect key="frame" x="244.5" y="40" width="132" height="125"/>
+                                                <state key="normal" backgroundImage="Element_Pyro">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" usesAttributedText="YES" allowsEditingTextAttributes="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4ag-h1-BHE">
+                                                <rect key="frame" x="92" y="310" width="232" height="75"/>
+                                                <color key="backgroundColor" red="0.28627450980000002" green="0.32156862749999998" blue="0.39607843139999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="Cryo">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.61608856919999999" green="0.83900827170000003" blue="0.89406663180000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <font key="NSFont" metaFont="system" size="20"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content=" wins against ">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.90980392160000001" green="0.8862745098" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <font key="NSFont" metaFont="system" size="20"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="Hydro">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.26887583729999998" green="0.75802510980000004" blue="0.95417004819999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <font key="NSFont" metaFont="system" size="20"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content=". ">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.90980392160000001" green="0.8862745098" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <font key="NSFont" metaFont="system" size="20"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="Pyro">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.94589525460000001" green="0.4746772051" blue="0.17324933410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <font key="NSFont" metaFont="system" size="20"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content=" wins against ">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.90980392160000001" green="0.8862745098" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <font key="NSFont" metaFont="system" size="20"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="Cryo">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.61608856919999999" green="0.83900827170000003" blue="0.89406663180000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <font key="NSFont" metaFont="system" size="20"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content=". ">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.90980392160000001" green="0.8862745098" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <font key="NSFont" metaFont="system" size="20"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="Hydro">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.26887583729999998" green="0.75802510980000004" blue="0.95417004819999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <font key="NSFont" metaFont="system" size="20"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content=" wins against ">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.90980392160000001" green="0.8862745098" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <font key="NSFont" metaFont="system" size="20"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="Pyro">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.94589525460000001" green="0.4746772051" blue="0.17324933410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <font key="NSFont" metaFont="system" size="20"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content=".">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.90980392160000001" green="0.8862745098" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <font key="NSFont" metaFont="system" size="20"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RtK-CC-cO6">
+                                                <rect key="frame" x="141" y="183" width="132" height="125"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="125" id="H0s-sl-mqD"/>
+                                                </constraints>
+                                                <state key="normal" backgroundImage="Element_Hydro">
+                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.28627450980000002" green="0.32156862749999998" blue="0.39607843139999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="tintColor" systemColor="labelColor"/>
+                                        <constraints>
+                                            <constraint firstItem="4ag-h1-BHE" firstAttribute="height" secondItem="fFX-Ah-Rps" secondAttribute="height" multiplier="0.183374" id="34D-Wo-dDu"/>
+                                            <constraint firstItem="gYy-LD-Jc5" firstAttribute="centerY" secondItem="fFX-Ah-Rps" secondAttribute="centerY" multiplier="0.5" id="BVo-7H-c5u"/>
+                                            <constraint firstItem="gYy-LD-Jc5" firstAttribute="centerX" secondItem="fFX-Ah-Rps" secondAttribute="centerX" multiplier="0.5" id="IAl-qv-qJY"/>
+                                            <constraint firstItem="Vds-wn-tMl" firstAttribute="width" secondItem="fFX-Ah-Rps" secondAttribute="width" multiplier="0.318841" id="Jh2-Al-6ag"/>
+                                            <constraint firstItem="RtK-CC-cO6" firstAttribute="centerX" secondItem="fFX-Ah-Rps" secondAttribute="centerX" id="LBG-we-3Iw"/>
+                                            <constraint firstItem="Vds-wn-tMl" firstAttribute="centerY" secondItem="fFX-Ah-Rps" secondAttribute="centerY" multiplier="0.5" id="Olq-yf-l3o"/>
+                                            <constraint firstItem="4ag-h1-BHE" firstAttribute="centerY" secondItem="fFX-Ah-Rps" secondAttribute="centerY" multiplier="1.7" id="Ve1-aO-r41"/>
+                                            <constraint firstItem="gYy-LD-Jc5" firstAttribute="height" secondItem="fFX-Ah-Rps" secondAttribute="height" multiplier="0.271394" id="d4O-21-diU"/>
+                                            <constraint firstItem="RtK-CC-cO6" firstAttribute="height" secondItem="fFX-Ah-Rps" secondAttribute="height" multiplier="0.305623" id="dzx-jz-A8o"/>
+                                            <constraint firstItem="RtK-CC-cO6" firstAttribute="width" secondItem="fFX-Ah-Rps" secondAttribute="width" multiplier="0.318841" id="euR-Vw-jLK"/>
+                                            <constraint firstItem="Vds-wn-tMl" firstAttribute="centerX" secondItem="fFX-Ah-Rps" secondAttribute="centerX" multiplier="1.5" id="fN6-4E-1qC"/>
+                                            <constraint firstItem="RtK-CC-cO6" firstAttribute="centerY" secondItem="fFX-Ah-Rps" secondAttribute="centerY" multiplier="1.2" id="fVt-Mi-SHU"/>
+                                            <constraint firstItem="gYy-LD-Jc5" firstAttribute="width" secondItem="fFX-Ah-Rps" secondAttribute="width" multiplier="0.306763" id="oZf-jy-fo1"/>
+                                            <constraint firstItem="4ag-h1-BHE" firstAttribute="centerX" secondItem="fFX-Ah-Rps" secondAttribute="centerX" id="ss3-Vv-Z7e"/>
+                                            <constraint firstItem="Vds-wn-tMl" firstAttribute="height" secondItem="fFX-Ah-Rps" secondAttribute="height" multiplier="0.305623" id="uXp-Ef-m8h"/>
+                                            <constraint firstItem="4ag-h1-BHE" firstAttribute="width" secondItem="fFX-Ah-Rps" secondAttribute="width" multiplier="0.560386" id="yNL-ni-Vo3"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="phR-BO-ZMv" userLabel="Row3">
+                                        <rect key="frame" x="0.0" y="638" width="414" height="268.5"/>
+                                        <subviews>
+                                            <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Result:" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0dY-5c-d2F">
+                                                <rect key="frame" x="20" y="18" width="371" height="34"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.90980392160000001" green="0.8862745098" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.90980392160000001" green="0.8862745098" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="tintColor" systemColor="labelColor"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="fFX-Ah-Rps" firstAttribute="leading" secondItem="VHO-5k-FwN" secondAttribute="leading" id="03R-rA-1gE"/>
+                                    <constraint firstItem="g8U-SM-6ss" firstAttribute="top" secondItem="VHO-5k-FwN" secondAttribute="top" id="2JG-Kp-nUh"/>
+                                    <constraint firstItem="phR-BO-ZMv" firstAttribute="height" secondItem="VHO-5k-FwN" secondAttribute="height" multiplier="0.328313" id="2ZU-8l-Xtk"/>
+                                    <constraint firstItem="fFX-Ah-Rps" firstAttribute="centerX" secondItem="VHO-5k-FwN" secondAttribute="centerX" id="2fX-l4-J5z"/>
+                                    <constraint firstItem="g8U-SM-6ss" firstAttribute="centerX" secondItem="VHO-5k-FwN" secondAttribute="centerX" id="3dd-VV-2is"/>
+                                    <constraint firstItem="fFX-Ah-Rps" firstAttribute="top" secondItem="g8U-SM-6ss" secondAttribute="bottom" id="4Pe-Ml-qRN"/>
+                                    <constraint firstItem="g8U-SM-6ss" firstAttribute="width" secondItem="VHO-5k-FwN" secondAttribute="width" id="QxQ-In-pb9"/>
+                                    <constraint firstItem="phR-BO-ZMv" firstAttribute="width" secondItem="VHO-5k-FwN" secondAttribute="width" id="VDx-Ke-fJI"/>
+                                    <constraint firstItem="phR-BO-ZMv" firstAttribute="leading" secondItem="VHO-5k-FwN" secondAttribute="leading" id="anG-y6-jDI"/>
+                                    <constraint firstItem="g8U-SM-6ss" firstAttribute="height" secondItem="VHO-5k-FwN" secondAttribute="height" multiplier="0.28" id="eQB-jP-dWm"/>
+                                    <constraint firstItem="fFX-Ah-Rps" firstAttribute="width" secondItem="VHO-5k-FwN" secondAttribute="width" id="s5x-AM-gEM"/>
+                                    <constraint firstItem="fFX-Ah-Rps" firstAttribute="height" secondItem="VHO-5k-FwN" secondAttribute="height" multiplier="0.5" id="zvb-4G-RPJ"/>
+                                    <constraint firstItem="phR-BO-ZMv" firstAttribute="top" secondItem="fFX-Ah-Rps" secondAttribute="bottom" id="zzN-3E-Wqp"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="VHO-5k-FwN" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" id="0I4-gL-iDV"/>
+                            <constraint firstItem="VHO-5k-FwN" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="0Ow-Lv-H7M"/>
+                            <constraint firstItem="VHO-5k-FwN" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="4GH-sz-94O"/>
+                            <constraint firstItem="VHO-5k-FwN" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" id="sKl-CF-ci9"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="531.8840579710145" y="133.92857142857142"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Element_Cryo" width="360" height="360"/>
+        <image name="Element_Hydro" width="360" height="360"/>
+        <image name="Element_Pyro" width="360" height="360"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
