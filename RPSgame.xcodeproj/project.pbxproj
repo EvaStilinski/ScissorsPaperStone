@@ -15,6 +15,9 @@
 		1C6FE67128AEFA720047222A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C6FE66F28AEFA720047222A /* LaunchScreen.storyboard */; };
 		1C6FE67C28AEFA730047222A /* RPSgameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C6FE67B28AEFA730047222A /* RPSgameTests.swift */; };
 		1C6FE68728AEFA730047222A /* RPSgameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C6FE68628AEFA730047222A /* RPSgameUITests.swift */; };
+		1CDF7E1228B53A0100B2BB9D /* Movimiento.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CDF7E1128B53A0100B2BB9D /* Movimiento.swift */; };
+		1CDF7E1728B53A6100B2BB9D /* Randomizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CDF7E1628B53A6100B2BB9D /* Randomizer.swift */; };
+		1CDF7E1C28B556B200B2BB9D /* ElementCompare.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CDF7E1B28B556B200B2BB9D /* ElementCompare.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		1C6FE68228AEFA730047222A /* RPSgameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RPSgameUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C6FE68628AEFA730047222A /* RPSgameUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RPSgameUITests.swift; sourceTree = "<group>"; };
 		1C6FE68828AEFA730047222A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1CDF7E1128B53A0100B2BB9D /* Movimiento.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movimiento.swift; sourceTree = "<group>"; };
+		1CDF7E1628B53A6100B2BB9D /* Randomizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Randomizer.swift; sourceTree = "<group>"; };
+		1CDF7E1B28B556B200B2BB9D /* ElementCompare.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElementCompare.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +105,7 @@
 		1C6FE66328AEFA710047222A /* RPSgame */ = {
 			isa = PBXGroup;
 			children = (
+				1CDF7E0A28B5326600B2BB9D /* Model */,
 				1C6FE66428AEFA710047222A /* AppDelegate.swift */,
 				1C6FE66628AEFA710047222A /* SceneDelegate.swift */,
 				1C6FE66828AEFA710047222A /* ViewController.swift */,
@@ -122,10 +129,60 @@
 		1C6FE68528AEFA730047222A /* RPSgameUITests */ = {
 			isa = PBXGroup;
 			children = (
+				1CDF7E0D28B538E500B2BB9D /* Model */,
 				1C6FE68628AEFA730047222A /* RPSgameUITests.swift */,
 				1C6FE68828AEFA730047222A /* Info.plist */,
 			);
 			path = RPSgameUITests;
+			sourceTree = "<group>";
+		};
+		1CDF7E0A28B5326600B2BB9D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1CDF7E1028B539E900B2BB9D /* Util */,
+				1CDF7E0C28B532BD00B2BB9D /* ValueObject */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1CDF7E0C28B532BD00B2BB9D /* ValueObject */ = {
+			isa = PBXGroup;
+			children = (
+				1CDF7E1128B53A0100B2BB9D /* Movimiento.swift */,
+			);
+			path = ValueObject;
+			sourceTree = "<group>";
+		};
+		1CDF7E0D28B538E500B2BB9D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1CDF7E0F28B5390400B2BB9D /* ValueObject */,
+				1CDF7E0E28B538FD00B2BB9D /* Util */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1CDF7E0E28B538FD00B2BB9D /* Util */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		1CDF7E0F28B5390400B2BB9D /* ValueObject */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ValueObject;
+			sourceTree = "<group>";
+		};
+		1CDF7E1028B539E900B2BB9D /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				1CDF7E1628B53A6100B2BB9D /* Randomizer.swift */,
+				1CDF7E1B28B556B200B2BB9D /* ElementCompare.swift */,
+			);
+			path = Util;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,7 +316,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				1C6FE66928AEFA710047222A /* ViewController.swift in Sources */,
+				1CDF7E1728B53A6100B2BB9D /* Randomizer.swift in Sources */,
 				1C6FE66528AEFA710047222A /* AppDelegate.swift in Sources */,
+				1CDF7E1228B53A0100B2BB9D /* Movimiento.swift in Sources */,
+				1CDF7E1C28B556B200B2BB9D /* ElementCompare.swift in Sources */,
 				1C6FE66728AEFA710047222A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

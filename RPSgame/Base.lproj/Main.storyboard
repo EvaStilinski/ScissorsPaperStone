@@ -41,20 +41,26 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fFX-Ah-Rps" userLabel="Row2">
                                         <rect key="frame" x="0.0" y="229" width="414" height="409"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gYy-LD-Jc5">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gYy-LD-Jc5" userLabel="ButtonCryo">
                                                 <rect key="frame" x="40" y="47" width="127" height="111"/>
                                                 <state key="normal" backgroundImage="Element_Cryo">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="cryoButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6Ih-g3-BN6"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vds-wn-tMl">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vds-wn-tMl" userLabel="ButtonPyro">
                                                 <rect key="frame" x="244.5" y="40" width="132" height="125"/>
                                                 <state key="normal" backgroundImage="Element_Pyro">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="pyroButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dHh-UJ-rcJ"/>
+                                                </connections>
                                             </button>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" usesAttributedText="YES" allowsEditingTextAttributes="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4ag-h1-BHE">
-                                                <rect key="frame" x="92" y="310" width="232" height="75"/>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" usesAttributedText="YES" allowsEditingTextAttributes="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4ag-h1-BHE">
+                                                <rect key="frame" x="91" y="310" width="232" height="75"/>
                                                 <color key="backgroundColor" red="0.28627450980000002" green="0.32156862749999998" blue="0.39607843139999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <attributedString key="attributedText">
                                                     <fragment content="Cryo">
@@ -132,14 +138,14 @@
                                                 </attributedString>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RtK-CC-cO6">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RtK-CC-cO6" userLabel="ButtonHydro">
                                                 <rect key="frame" x="141" y="183" width="132" height="125"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="125" id="H0s-sl-mqD"/>
-                                                </constraints>
                                                 <state key="normal" backgroundImage="Element_Hydro">
                                                     <color key="titleColor" systemColor="labelColor"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="hydroButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nps-AA-m0O"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" red="0.28627450980000002" green="0.32156862749999998" blue="0.39607843139999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -166,7 +172,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="phR-BO-ZMv" userLabel="Row3">
                                         <rect key="frame" x="0.0" y="638" width="414" height="268.5"/>
                                         <subviews>
-                                            <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Result:" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0dY-5c-d2F">
+                                            <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Result:" borderStyle="roundedRect" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="13" translatesAutoresizingMaskIntoConstraints="NO" id="0dY-5c-d2F">
                                                 <rect key="frame" x="20" y="18" width="371" height="34"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" red="0.90980392160000001" green="0.8862745098" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -183,7 +189,6 @@
                                     <constraint firstItem="fFX-Ah-Rps" firstAttribute="leading" secondItem="VHO-5k-FwN" secondAttribute="leading" id="03R-rA-1gE"/>
                                     <constraint firstItem="g8U-SM-6ss" firstAttribute="top" secondItem="VHO-5k-FwN" secondAttribute="top" id="2JG-Kp-nUh"/>
                                     <constraint firstItem="phR-BO-ZMv" firstAttribute="height" secondItem="VHO-5k-FwN" secondAttribute="height" multiplier="0.328313" id="2ZU-8l-Xtk"/>
-                                    <constraint firstItem="fFX-Ah-Rps" firstAttribute="centerX" secondItem="VHO-5k-FwN" secondAttribute="centerX" id="2fX-l4-J5z"/>
                                     <constraint firstItem="g8U-SM-6ss" firstAttribute="centerX" secondItem="VHO-5k-FwN" secondAttribute="centerX" id="3dd-VV-2is"/>
                                     <constraint firstItem="fFX-Ah-Rps" firstAttribute="top" secondItem="g8U-SM-6ss" secondAttribute="bottom" id="4Pe-Ml-qRN"/>
                                     <constraint firstItem="g8U-SM-6ss" firstAttribute="width" secondItem="VHO-5k-FwN" secondAttribute="width" id="QxQ-In-pb9"/>
@@ -205,6 +210,9 @@
                             <constraint firstItem="VHO-5k-FwN" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" id="sKl-CF-ci9"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="Result" destination="0dY-5c-d2F" id="67B-P2-0iZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
